@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>DroneAgro - Servicios Profesionales de Drones Agrícolas | Fumigación y Mapeo Aéreo</title>
+    <meta name="description" content="Servicios profesionales de drones agrícolas: fumigación aérea, fertilización de precisión, mapeo multiespectral y monitoreo de cultivos. Cobertura 200km. Ahorra hasta 90% en agua y químicos. +50,000 hectáreas procesadas. Cotización gratuita.">
+    <meta name="keywords" content="drones agrícolas, fumigación con drones, mapeo aéreo, agricultura de precisión, fertilización aérea, monitoreo de cultivos, servicios agrícolas">
+    <meta name="author" content="DroneAgro">
+    <link rel="canonical" href="https://www.droneagro.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.droneagro.com/">
+    <meta property="og:title" content="DroneAgro - Drones Agrícolas Profesionales">
+    <meta property="og:description" content="Servicios de fumigación, fertilización y mapeo con drones. Tecnología de precisión para tu campo. Ahorra hasta 90% en agua.">
+    <meta property="og:image" content="https://www.droneagro.com/assets/images/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.droneagro.com/">
+    <meta name="twitter:title" content="DroneAgro - Drones Agrícolas Profesionales">
+    <meta name="twitter:description" content="Servicios profesionales de drones para agricultura: fumigación, mapeo y monitoreo.">
+    <meta name="twitter:image" content="https://www.droneagro.com/assets/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         LOADING ANIMATION INICIAL
+         Se oculta automáticamente después de cargar
+         ========================================== -->
+    <div class="page-loader">
+        <div class="loader-icon">🚁</div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==========================================
+         HEADER - Barra de navegación fija
+         Se mantiene visible en la parte superior mientras
+         el usuario hace scroll por la página
+         ========================================== -->
+    <header>
+        <nav>
+            <!-- Logo de la empresa -->
+            <div class="logo"> 
+                <img src="https://www.shutterstock.com/image-vector/technology-icon-pack-featuring-drone-600nw-2571498399.jpg" alt="DroneAgro Logo">
+            </div>
+            
+            <!-- Enlaces de navegación principales -->
+            <ul class="nav_links">
+                <li><a href="index.html" class="active">Inicio</a></li> <!-- "active" marca la página actual -->
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="#footer">Contacto</a></li> <!-- Enlace al footer -->
+            </ul>
+            
+            <!-- Botón hamburguesa para menú móvil (3 líneas) -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+         HERO - Sección principal con video de fondo
+         Primera sección que ve el usuario
+         ========================================== -->
+    <section id="hero">
+        <!-- Video de fondo en loop continuo -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-farm-field-4065-large.mp4" type="video/mp4">
+        </video>
+        <!-- Overlay oscuro sobre el video para mejorar legibilidad del texto -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Contenido principal del hero -->
+        <div class="hero-content">
+            <h1 class="fade-in-up">Servicios Profesionales de Drones Agrícolas</h1>
+            <p class="fade-in-up delay-1">
+                Especialistas en 
+                <!-- Contenedor para texto rotativo/cambiante -->
+                <span class="rotating-text-container">
+                    <span class="rotating-text">
+                        <span>Fumigación</span>
+                        <span>Fertilización</span>
+                        <span>Mapeo</span>
+                        <span>Monitoreo</span>
+                    </span>
+                </span>
+            </p>
+            <!-- Botones de llamada a la acción (CTA) -->
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#contacto" class="cta-button primary">Solicitar Cotización</a>
+                <a href="servicios.html" class="cta-button secondary">Ver Servicios</a>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll (flecha hacia abajo) -->
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ESTADÍSTICAS - Números impactantes
+         Muestra métricas clave de la empresa con
+         animación de conteo automático
+         ========================================== -->
+    <section id="stats">
+        <div class="stats-container">
+            <div class="stat-item animate-on-scroll">
+                <span class="stat-number" data-target="50000">0</span>
+                <span class="stat-label">Hectáreas Procesadas</span>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <span class="stat-number" data-target="200">0</span>
+                <span class="stat-label">Clientes Satisfechos</span>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Drones en Flota</span>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <span class="stat-number" data-target="5">0</span>
+                <span class="stat-label">Años de Experiencia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS DESTACADOS -->
+    <section id="servicios-home">
+        <h2 class="animate-on-scroll bounce-effect">Nuestros Servicios</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Soluciones integrales con tecnología de drones
+        </p>
+        
+        <div class="servicios-grid">
+            <div class="servicio-card animate-on-scroll from-left">
+                <div class="servicio-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M17 7l-5-5-5 5M7 17l5 5 5-5"/>
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M8 12c0 2-2 4-4 4M16 12c0 2 2 4 4 4"/>
+                    </svg>
+                </div>
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?w=400&h=250&fit=crop" 
+                     alt="Fumigación con drone">
+                <div class="servicio-content">
+                    <h3>Fumigación Aérea</h3>
+                    <p>Aplicación precisa de fitosanitarios con mínimo desperdicio.</p>
+                    <a href="servicios.html" class="btn-link">Más información →</a>
+                </div>
+            </div>
+
+            <div class="servicio-card animate-on-scroll from-bottom">
+                <div class="servicio-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C6 2 6 6 6 12c0 4 2 8 6 10 4-2 6-6 6-10 0-6 0-10-6-10z"/>
+                        <path d="M12 2v20"/>
+                    </svg>
+                </div>
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=250&fit=crop" 
+                     alt="Fertilización">
+                <div class="servicio-content">
+                    <h3>Fertilización</h3>
+                    <p>Distribución uniforme de fertilizantes granulados y líquidos.</p>
+                    <a href="servicios.html" class="btn-link">Más información →</a>
+                </div>
+            </div>
+
+            <div class="servicio-card animate-on-scroll from-right">
+                <div class="servicio-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z"/>
+                        <path d="M9 3v15M15 6v15"/>
+                    </svg>
+                </div>
+                <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=400&h=250&fit=crop" 
+                     alt="Mapeo">
+                <div class="servicio-content">
+                    <h3>Mapeo y Análisis</h3>
+                    <p>Cartografía aérea y análisis multiespectral de cultivos.</p>
+                    <a href="servicios.html" class="btn-link">Más información →</a>
+                </div>
+            </div>
+
+            <div class="servicio-card animate-on-scroll from-left">
+                <div class="servicio-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35"/>
+                        <circle cx="11" cy="11" r="3"/>
+                    </svg>
+                </div>
+                <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&h=250&fit=crop" 
+                     alt="Monitoreo">
+                <div class="servicio-content">
+                    <h3>Monitoreo de Cultivos</h3>
+                    <p>Detección temprana de plagas y estrés hídrico.</p>
+                    <a href="servicios.html" class="btn-link">Más información →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-center animate-on-scroll">
+            <a href="servicios.html" class="cta-button primary">Ver todos los servicios</a>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section id="porque">
+        <h2 class="animate-on-scroll">¿Por qué elegirnos? </h2>
+        <div class="porque-grid">
+            <div class="porque-item animate-on-scroll scale-in">
+                <div class="porque-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                </div>
+                <h3>Rapidez</h3>
+                <p>Cubrimos grandes extensiones en tiempo récord</p>
+            </div>
+            <div class="porque-item animate-on-scroll scale-in">
+                <div class="porque-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                </div>
+                <h3>Precisión</h3>
+                <p>Aplicación exacta donde se necesita</p>
+            </div>
+            <div class="porque-item animate-on-scroll scale-in">
+                <div class="porque-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                    </svg>
+                </div>
+                <h3>Ahorro</h3>
+                <p>Hasta 90% menos agua y químicos</p>
+            </div>
+            <div class="porque-item animate-on-scroll scale-in">
+                <div class="porque-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                </div>
+                <h3>Ecológico</h3>
+                <p>Menor impacto ambiental</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS PREVIEW -->
+    <section id="testimonios-home">
+        <h2 class="animate-on-scroll">Lo que dicen nuestros clientes</h2>
+        
+        <div class="testimonios-slider">
+            <div class="testimonio-card animate-on-scroll from-left">
+                <div class="testimonio-stars">★★★★★</div>
+                <p class="testimonio-text">
+                    "Redujimos costos un 40% y aumentamos rendimiento.  
+                    El equipo de DroneAgro es muy profesional."
+                </p>
+                <div class="testimonio-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+                    <div>
+                        <strong>Carlos Méndez</strong>
+                        <span>Agricultor - 500 hectáreas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-card animate-on-scroll from-bottom">
+                <div class="testimonio-stars">★★★★★</div>
+                <p class="testimonio-text">
+                    "La fumigación con drones nos permitió tratar zonas 
+                    antes inaccesibles.  Excelente servicio."
+                </p>
+                <div class="testimonio-author">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente">
+                    <div>
+                        <strong>María González</strong>
+                        <span>Ing. Agrónoma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-card animate-on-scroll from-right">
+                <div class="testimonio-stars">★★★★★</div>
+                <p class="testimonio-text">
+                    "El mapeo multiespectral nos ayudó a detectar problemas 
+                    antes de que fueran visibles. Increíble tecnología."
+                </p>
+                <div class="testimonio-author">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Cliente">
+                    <div>
+                        <strong>Roberto Silva</strong>
+                        <span>Gerente - AgroTech S.A.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-center animate-on-scroll">
+            <a href="testimonios.html" class="cta-button secondary">Ver más testimonios</a>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQs) -->
+    <section id="faqs">
+        <h2 class="animate-on-scroll bounce-effect">Preguntas Frecuentes</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Respuestas a las dudas más comunes sobre nuestros servicios
+        </p>
+        
+        <div class="faqs-container">
+            <div class="faq-item animate-on-scroll from-left">
+                <button class="faq-question">
+                    <span>¿Qué áreas geográficas cubren con sus servicios?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Operamos en toda la región agrícola, cubriendo un radio de 200km desde nuestra base. Para proyectos especiales fuera de esta área, podemos hacer arreglos específicos. Contamos con equipos móviles que se desplazan a diferentes zonas según la demanda.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-right">
+                <button class="faq-question">
+                    <span>¿Cuánto tiempo toma procesar un campo de 100 hectáreas?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Para fumigación, procesamos aproximadamente 10 hectáreas por hora, por lo que 100 hectáreas tomarían alrededor de 10 horas de vuelo. Sin embargo, el tiempo real depende de factores como el tipo de cultivo, condiciones climáticas y complejidad del terreno.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-left">
+                <button class="faq-question">
+                    <span>¿Son seguros los drones para el medio ambiente?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sí, completamente. Los drones reducen hasta un 90% el uso de agua y un 40% el consumo de químicos comparado con métodos tradicionales. No compactan el suelo, permiten aplicación nocturna (menor evaporación), y la precisión GPS evita sobreposiciones y desperdicio de producto.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-right">
+                <button class="faq-question">
+                    <span>¿Qué pasa si las condiciones climáticas no son favorables?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Monitoreamos constantemente las condiciones meteorológicas. No volamos con vientos superiores a 25 km/h o durante lluvias. Si el clima no es óptimo el día programado, reprogramamos sin costo adicional. Nuestra flexibilidad operativa nos permite adaptarnos rápidamente.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-left">
+                <button class="faq-question">
+                    <span>¿Necesito algún permiso especial para contratar el servicio?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No, nosotros nos encargamos de todos los permisos y regulaciones aeronáuticas necesarias. Solo necesitamos acceso al campo y la información básica del cultivo. Contamos con todas las licencias y seguros requeridos por ley.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-right">
+                <button class="faq-question">
+                    <span>¿Ofrecen capacitación para que yo mismo opere los drones?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sí, tenemos programas de capacitación completos que incluyen pilotaje, mantenimiento, planificación de vuelos e interpretación de datos. El curso dura entre 2-4 semanas y al finalizar recibes certificación oficial como piloto de drones agrícolas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-left">
+                <button class="faq-question">
+                    <span>¿Cuál es la diferencia entre el servicio de mapeo y monitoreo?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>El mapeo es un servicio puntual que genera ortomosaicos, modelos de elevación e índices vegetativos (NDVI, NDRE) para análisis profundo. El monitoreo es un servicio periódico (semanal, quincenal) que rastrea la evolución del cultivo, detecta problemas tempranos y genera alertas automáticas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll from-right">
+                <button class="faq-question">
+                    <span>¿Cuál es el costo promedio del servicio?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Los precios varían según el servicio: fumigación desde $15 USD/ha, fertilización desde $12 USD/ha, mapeo desde $8 USD/ha, y monitoreo desde $5 USD/ha. Ofrecemos descuentos por volumen y paquetes anuales. Contáctanos para una cotización personalizada según tus necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER - Información y contactos
+         ========================================== -->
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo y redes sociales -->
+            <div class="footer-col">
+                <h4>DroneAgro</h4>
+                <p>Tecnología de precisión para la agricultura del futuro.</p>
+                
+                <div class="footer-social">
+                    <a href="#" title="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="#" title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" title="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="#" title="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Ubicación</strong></p>
+                    <p>Av. Agricultura 1234, Ciudad<br>Centro de Negocios AgriSpace</p>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Horario de trabajo</strong></p>
+                    <p>8:00 - 21:00<br>Lunes - Domingo</p>
+                </div>
+            </div>
+            
+            <!-- Columna 2: Enlaces de navegación -->
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3: Servicios principales -->
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="servicios.html">Fumigación con drones</a></li>
+                    <li><a href="servicios.html">Fertilización de precisión</a></li>
+                    <li><a href="servicios.html">Mapeo aéreo</a></li>
+                    <li><a href="servicios.html">Capacitación</a></li>
+                    <li><a href="servicios.html">Análisis de cultivos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 4: Contactos -->
+            <div class="footer-col">
+                <h4>Contactos</h4>
+                
+                <div class="footer-contacto">
+                    <p class="contacto-titulo">Jefe del Departamento Comercial</p>
+                    <p class="contacto-nombre">Juan Pérez García</p>
+                    <p class="contacto-telefono"><a href="tel:+12345671457">+1 234 567 1457</a></p>
+                </div>
+                
+                <div class="footer-contacto">
+                    <p class="contacto-titulo">Jefe de Operaciones</p>
+                    <p class="contacto-nombre">Carlos Rodríguez López</p>
+                    <p class="contacto-telefono"><a href="tel:+12345675304">+1 234 567 5304</a></p>
+                </div>
+                
+                <div class="footer-contacto">
+                    <p class="contacto-titulo">Jefe del Departamento de Servicios</p>
+                    <p class="contacto-nombre">Ana Martínez Silva</p>
+                    <p class="contacto-telefono"><a href="tel:+12345677206">+1 234 567 7206</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior del footer con copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 DroneAgro. Todos los derechos reservados. </p>
+        </div>
+    </footer>
+
+    <!-- Vincula el archivo JavaScript con todas las animaciones e interacciones -->
+    <script src="animations.js"></script>
+</body>
+</html>

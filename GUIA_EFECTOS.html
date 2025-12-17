@@ -1,0 +1,262 @@
+<!-- ============================================
+     GUÍA RÁPIDA - CÓMO USAR LOS NUEVOS EFECTOS
+     ============================================ -->
+
+<!-- 1. BOTONES CTA -->
+<!-- Primary Button (Naranja con gradiente) -->
+<a href="#" class="cta-button primary">Solicitar Cotización</a>
+
+<!-- Secondary Button (Transparente con borde) -->
+<a href="#" class="cta-button secondary">Conocer Más</a>
+
+<!-- Large Button -->
+<a href="#" class="cta-button primary large">Botón Grande</a>
+
+
+<!-- 2. TARJETAS CON ANIMACIÓN -->
+<!-- Tarjeta que aparece desde la izquierda -->
+<div class="servicio-card animate-on-scroll from-left">
+    <div class="servicio-icon">🚁</div>
+    <img src="imagen.jpg" alt="Servicio">
+    <div class="servicio-content">
+        <h3>Título del Servicio</h3>
+        <p>Descripción del servicio...</p>
+        <a href="#" class="btn-link">Ver más</a>
+    </div>
+</div>
+
+<!-- Tarjeta que aparece desde la derecha -->
+<div class="servicio-card animate-on-scroll from-right">
+    <!-- contenido -->
+</div>
+
+<!-- Tarjeta que aparece desde abajo -->
+<div class="servicio-card animate-on-scroll from-bottom">
+    <!-- contenido -->
+</div>
+
+<!-- Tarjeta con efecto de escala -->
+<div class="servicio-card animate-on-scroll scale-in">
+    <!-- contenido -->
+</div>
+
+<!-- Tarjeta con efecto de rebote -->
+<div class="servicio-card animate-on-scroll bounce-effect">
+    <!-- contenido -->
+</div>
+
+
+<!-- 3. SECCIONES CON TÍTULO -->
+<section id="mi-seccion">
+    <h2 class="animate-on-scroll">Título de la Sección</h2>
+    <p class="section-subtitle animate-on-scroll">
+        Subtítulo descriptivo de la sección
+    </p>
+    
+    <!-- Contenido de la sección -->
+</section>
+
+
+<!-- 4. ESTADÍSTICAS CON CÍRCULOS ANIMADOS -->
+<section id="stats">
+    <div class="stats-container">
+        <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-label">Clientes Felices</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="50000">0</span>
+            <span class="stat-label">Hectáreas Procesadas</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Drones en Operación</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- 5. ÍCONO HEXAGONAL -->
+<style>
+.icono-hexagonal {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #1E5F9E, #0F3A5C);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+</style>
+
+<div class="icono-hexagonal">🚁</div>
+
+
+<!-- 6. TARJETA CON GLASSMORPHISM -->
+<style>
+.card-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+</style>
+
+<div class="card-glass">
+    <h3>Título con Efecto Vidrio</h3>
+    <p>Contenido de la tarjeta...</p>
+</div>
+
+
+<!-- 7. FAQ ACCORDION -->
+<div class="faqs-container">
+    <div class="faq-item">
+        <button class="faq-question">
+            <span>¿Cuál es tu pregunta?</span>
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Esta es la respuesta a la pregunta.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 8. TESTIMONIOS CON GLASSMORPHISM -->
+<div class="testimonios-slider">
+    <div class="testimonio-card animate-on-scroll">
+        <div class="testimonio-stars">
+            <span class="stars">★★★★★</span>
+        </div>
+        <p class="testimonio-text">
+            "Excelente servicio, muy profesionales..."
+        </p>
+        <div class="testimonio-author">
+            <img src="cliente.jpg" alt="Cliente">
+            <div>
+                <strong>Juan Pérez</strong>
+                <span>Agricultor</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 9. USAR COLORES CSS VARIABLES -->
+<style>
+/* Usar las variables de color en tu CSS personalizado */
+.mi-elemento {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-cta);
+}
+
+.mi-boton {
+    background: var(--gradient-cta);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+}
+
+.mi-boton:hover {
+    box-shadow: var(--shadow-xl);
+}
+</style>
+
+
+<!-- 10. ANIMACIONES PERSONALIZADAS -->
+<style>
+/* Fade in desde arriba */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Con delay */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+</style>
+
+<div class="fade-in-up">Aparece primero</div>
+<div class="fade-in-up delay-1">Aparece segundo</div>
+<div class="fade-in-up delay-2">Aparece tercero</div>
+
+
+<!-- ============================================
+     CÓDIGO JAVASCRIPT ÚTIL
+     ============================================ -->
+
+<script>
+// Inicializar elementos animados manualmente
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    el.classList.add('visible');
+});
+
+// Scroll suave a un elemento
+function scrollToElement(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+        });
+    }
+}
+
+// Ejemplo de uso
+// scrollToElement('servicios');
+
+// Cambiar color de un elemento dinámicamente
+function changeColor(element, color) {
+    element.style.background = `var(--color-${color})`;
+}
+
+// Ejemplo: changeColor(miElemento, 'primary');
+</script>
+
+
+<!-- ============================================
+     TIPS Y MEJORES PRÁCTICAS
+     ============================================ -->
+
+<!--
+1. PERFORMANCE:
+   - Usa transform y opacity para animaciones (GPU accelerated)
+   - Evita animar width, height, margin, padding directamente
+   - Usa will-change con moderación
+
+2. ACCESIBILIDAD:
+   - Siempre incluye aria-labels en elementos interactivos
+   - Mantén contraste de colores adecuado
+   - Asegura navegación por teclado
+
+3. RESPONSIVE:
+   - Prueba en móvil, tablet y desktop
+   - Usa unidades relativas (rem, em, %)
+   - Media queries en orden mobile-first
+
+4. COLORES:
+   - Usa las variables CSS para consistencia
+   - No uses colores hardcoded (#1E5F9E)
+   - Usa var(--color-primary) en su lugar
+
+5. ANIMACIONES:
+   - No abuses de las animaciones
+   - Mantén durations entre 0.2s y 0.8s
+   - Usa ease-in-out o cubic-bezier
+
+6. IMÁGENES:
+   - Optimiza imágenes antes de subirlas
+   - Usa formatos modernos (WebP cuando sea posible)
+   - Incluye alt text descriptivo
+
+7. SEO:
+   - Mantén estructura semántica HTML5
+   - Usa h1, h2, h3 en orden jerárquico
+   - Meta descriptions únicas por página
+-->

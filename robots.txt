@@ -1,0 +1,30 @@
+# robots.txt para DroneAgro
+# Permite el rastreo completo del sitio
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos estáticos
+Allow: /styles.css
+Allow: /animations.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.webp
+
+# Bloquear archivos innecesarios
+Disallow: /GUIA_DESARROLLO.md
+
+# Sitemap
+Sitemap: https://www.droneagro.com/sitemap.xml
+
+# Rastreo específico para Google
+User-agent: Googlebot
+Allow: /
+
+# Rastreo de imágenes
+User-agent: Googlebot-Image
+Allow: /
+
+# Crawl-delay para evitar sobrecarga (opcional)
+# Crawl-delay: 10
