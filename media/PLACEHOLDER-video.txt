@@ -1,0 +1,91 @@
+# PLACEHOLDER - Media (Videos)
+
+Esta carpeta debe contener videos para el sitio web.
+
+**ARCHIVO PRINCIPAL:**
+- `hero-video.mp4` (1920x1080px, H.264 codec, máx 20MB)
+
+**ARCHIVO OPCIONAL:**
+- `testimonial-video.mp4` (Video testimonial de cliente)
+
+---
+
+## Requisitos para hero-video.mp4:
+
+### Especificaciones técnicas:
+- **Formato:** MP4
+- **Codec:** H.264
+- **Resolución:** 1920x1080px (Full HD)
+- **Frame rate:** 30fps
+- **Duración:** 10-30 segundos (loop)
+- **Peso máximo:** 20MB
+- **Audio:** Sin audio (muted)
+
+### Contenido sugerido:
+- Vista aérea de campos/cultivos
+- Drones en vuelo fumigando
+- Paisajes agrícolas
+- Movimientos suaves y cinematográficos
+- Sin texto o logos (se pone encima)
+
+---
+
+## Cómo crear/optimizar el video:
+
+### Opción 1: Grabar con el cliente
+1. Usar smartphone o cámara de drone
+2. Grabar en landscape (horizontal)
+3. Movimientos lentos y suaves
+4. Duración: 15-20 segundos
+
+### Opción 2: Video de stock
+- Pexels Videos (gratis): https://www.pexels.com/videos
+- Mixkit (gratis): https://mixkit.co/free-stock-video
+- Buscar: "aerial farm", "drone agriculture", "crops field"
+
+### Opción 3: Usar video del cliente
+1. Recibir video original
+2. Optimizar con HandBrake:
+   - Preset: "Fast 1080p30"
+   - RF: 23-25 (calidad)
+   - Audio: None
+   - Web Optimized: ON
+3. Comprimir hasta <20MB
+
+---
+
+## Cómo añadir el video:
+
+1. **Guardar video como:** `media/hero-video.mp4`
+2. **Verificar que funcione:** Abrir index.html en navegador
+3. **Si no carga:** 
+   - Verificar tamaño (<20MB)
+   - Verificar formato MP4 H.264
+   - Probar en Chrome/Edge
+4. **Eliminar este PLACEHOLDER.txt**
+
+---
+
+## Solución de problemas:
+
+### "El video no se reproduce"
+- ✅ Verificar formato MP4 (no MOV, AVI, etc.)
+- ✅ Verificar codec H.264
+- ✅ Reducir tamaño si es >20MB
+- ✅ Probar en diferentes navegadores
+
+### "El video se ve pixelado"
+- ✅ Aumentar calidad en HandBrake (RF 20-22)
+- ✅ Verificar resolución mínima 1920x1080px
+- ✅ No sobre-comprimir (mantener >5MB)
+
+### "El video pesa mucho"
+- ✅ Usar HandBrake preset "Fast 1080p30"
+- ✅ RF 25-28 para más compresión
+- ✅ Acortar duración a 15 segundos
+- ✅ Reducir resolución a 1280x720px si es necesario
+
+---
+
+**Herramienta recomendada:** HandBrake (gratuita)
+https://handbrake.fr/downloads.php

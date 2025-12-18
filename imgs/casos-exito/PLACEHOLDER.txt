@@ -1,0 +1,22 @@
+# PLACEHOLDER - Casos de Éxito
+
+Esta carpeta debe contener fotos de proyectos/casos de éxito.
+
+**ARCHIVOS NECESARIOS:**
+- `caso-1.jpg` (800x600px, máx 200KB)
+- `caso-2.jpg` (800x600px, máx 200KB)
+- `caso-3.jpg` (800x600px, máx 200KB)
+
+**Contenido sugerido:**
+- Fotos de proyectos completados
+- Antes y después de fumigaciones
+- Mapas generados por drones
+- Campos tratados con éxito
+- Cultivos saludables
+
+**Cómo añadir:**
+1. Recibir fotos de proyectos del cliente
+2. Seleccionar las 3 más impactantes
+3. Renombrar como `caso-1.jpg`, `caso-2.jpg`, `caso-3.jpg`
+4. Guardar en esta carpeta
+5. Eliminar este PLACEHOLDER.txt

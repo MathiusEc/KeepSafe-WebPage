@@ -1,0 +1,27 @@
+# PLACEHOLDER - Testimonios
+
+Esta carpeta debe contener fotos de clientes que dieron testimonios.
+
+**ARCHIVOS NECESARIOS:**
+- `cliente-1.jpg` (300x300px cuadrada, máx 80KB)
+- `cliente-2.jpg` (300x300px cuadrada, máx 80KB)
+- `cliente-3.jpg` (300x300px cuadrada, máx 80KB)
+- `cliente-4.jpg` (opcional)
+- `cliente-5.jpg` (opcional)
+
+**Requisitos:**
+- Fotos de clientes reales (con permiso)
+- Formato cuadrado (1:1)
+- Buena calidad y resolución
+
+**Alternativa si no hay fotos:**
+- Usar iniciales del cliente en círculo
+- Usar avatares genéricos profesionales
+- Usar ilustraciones de personas
+
+**Cómo añadir:**
+1. Recibir fotos del cliente (con autorización firmada)
+2. Recortar a formato cuadrado (300x300px)
+3. Renombrar como `cliente-1.jpg`, `cliente-2.jpg`, etc.
+4. Guardar en esta carpeta
+5. Eliminar este PLACEHOLDER.txt

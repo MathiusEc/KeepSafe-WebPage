@@ -1,0 +1,22 @@
+# PLACEHOLDER - Servicios
+
+Esta carpeta debe contener imágenes de los servicios.
+
+**ARCHIVOS NECESARIOS:**
+- `servicio-1.jpg` (800x600px, máx 200KB)
+- `servicio-2.jpg` (800x600px, máx 200KB)
+- `servicio-3.jpg` (800x600px, máx 200KB)
+- `servicio-4.jpg` (800x600px, máx 200KB)
+
+**Contenido sugerido:**
+- Fotos de drones en acción
+- Fumigación de cultivos
+- Mapeo aéreo
+- Monitoreo con drones
+- Fertilización
+
+**Cómo añadir:**
+1. Recibir fotos del cliente
+2. Renombrar como `servicio-1.jpg`, `servicio-2.jpg`, etc.
+3. Guardar en esta carpeta
+4. Eliminar este PLACEHOLDER.txt

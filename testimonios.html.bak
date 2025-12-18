@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica y responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Testimonios y Opiniones de Clientes | DroneAgro - 98% Satisfacción</title>
+    <meta name="description" content="Lee opiniones reales de agricultores que usan DroneAgro: 98% de satisfacción, +200 clientes felices. Casos de éxito con reducción de costos del 40% y aumento de rendimiento. Testimonios verificados y resultados comprobados.">
+    <meta name="keywords" content="opiniones DroneAgro, testimonios clientes, casos de éxito agricultura, reseñas servicios drones, experiencias agricultores">
+    <meta name="author" content="DroneAgro">
+    <link rel="canonical" href="https://www.droneagro.com/testimonios.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.droneagro.com/testimonios.html">
+    <meta property="og:title" content="Testimonios de Clientes - DroneAgro">
+    <meta property="og:description" content="98% de clientes satisfechos. Lee casos de éxito reales de agricultores que confían en DroneAgro.">
+    <meta property="og:image" content="https://www.droneagro.com/assets/images/testimonios-og.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Testimonios - Lo que dicen nuestros clientes">
+    <meta name="twitter:description" content="Opiniones reales de agricultores satisfechos con servicios de drones.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         LOADING ANIMATION INICIAL
+         ========================================== -->
+    <div class="page-loader">
+        <div class="loader-icon">🚁</div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==========================================
+         PÁGINA TESTIMONIOS
+         Muestra reseñas de clientes y casos de éxito
+         Incluye estadísticas de satisfacción
+         ========================================== -->
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo"> 
+                <img src="https://www.shutterstock.com/image-vector/technology-icon-pack-featuring-drone-600nw-2571498399.jpg" alt="DroneAgro Logo">
+            </div>
+            <ul class="nav_links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="testimonios.html" class="active">Testimonios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <h1 class="fade-in-up">Testimonios</h1>
+        <p class="fade-in-up delay-1">Lo que dicen nuestros clientes sobre nosotros</p>
+    </section>
+
+    <!-- ==========================================
+         ESTADÍSTICAS DE SATISFACCIÓN
+         Números clave sobre la satisfacción del cliente
+         Los porcentajes se animan automáticamente
+         ========================================== -->
+    <section id="satisfaccion">
+        <div class="satisfaccion-grid">
+            <div class="satisfaccion-item animate-on-scroll scale-in">
+                <span class="satisfaccion-numero">98%</span>
+                <span class="satisfaccion-label">Clientes Satisfechos</span>
+            </div>
+            <div class="satisfaccion-item animate-on-scroll scale-in">
+                <span class="satisfaccion-numero">4.9</span>
+                <span class="satisfaccion-label">Calificación Promedio ★</span>
+            </div>
+            <div class="satisfaccion-item animate-on-scroll scale-in">
+                <span class="satisfaccion-numero">85%</span>
+                <span class="satisfaccion-label">Nos Recomiendan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS DESTACADOS -->
+    <section id="testimonios-destacados">
+        <h2 class="animate-on-scroll">Testimonios Destacados</h2>
+        
+        <div class="testimonios-destacados-grid">
+            <!-- TESTIMONIO DESTACADO 1 -->
+            <div class="testimonio-destacado animate-on-scroll from-left">
+                <div class="testimonio-destacado-header">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Méndez">
+                    <div>
+                        <h4>Carlos Méndez</h4>
+                        <span>Productor de Soja - 2,000 ha</span>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <blockquote>
+                    "Desde que empezamos a trabajar con DroneAgro, nuestra operación cambió 
+                    completamente. Antes tardábamos 3 días en fumigar, ahora lo hacemos en 
+                    menos de 8 horas. El ahorro en productos químicos ha sido del 40%, y lo 
+                    más importante:  nuestro rendimiento por hectárea aumentó un 15%."
+                </blockquote>
+                <div class="testimonio-servicio">
+                    <span>Servicio utilizado:</span> Fumigación Aérea
+                </div>
+            </div>
+
+            <!-- TESTIMONIO DESTACADO 2 -->
+            <div class="testimonio-destacado animate-on-scroll from-right">
+                <div class="testimonio-destacado-header">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María González">
+                    <div>
+                        <h4>Ing. María González</h4>
+                        <span>Consultora Agronómica</span>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <blockquote>
+                    "Como asesora de varios productores, puedo decir que DroneAgro ofrece 
+                    el mejor servicio de mapeo multiespectral que he visto. Los informes 
+                    son detallados y las recomendaciones son precisas. Mis clientes han 
+                    podido tomar decisiones basadas en datos reales, no en suposiciones."
+                </blockquote>
+                <div class="testimonio-servicio">
+                    <span>Servicio utilizado: </span> Mapeo y Análisis
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TODOS LOS TESTIMONIOS -->
+    <section id="todos-testimonios">
+        <h2 class="animate-on-scroll">Más Opiniones de Clientes</h2>
+        
+        <div class="testimonios-grid">
+            <div class="testimonio-simple animate-on-scroll from-left">
+                <div class="stars">★★★★★</div>
+                <p>"Excelente servicio.  Puntuales, profesionales y con resultados visibles desde el primer vuelo."</p>
+                <div class="autor">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="">
+                    <div>
+                        <strong>Roberto Silva</strong>
+                        <span>Gerente - AgroTech S.A.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-simple animate-on-scroll from-bottom">
+                <div class="stars">★★★★★</div>
+                <p>"El monitoreo con drones nos permitió detectar una plaga temprano y salvar el 30% de la cosecha."</p>
+                <div class="autor">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="">
+                    <div>
+                        <strong>Pedro Ramírez</strong>
+                        <span>Productor de Maíz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-simple animate-on-scroll from-right">
+                <div class="stars">★★★★★</div>
+                <p>"Increíble la precisión del mapeo. Pudimos ver exactamente dónde había problemas de riego."</p>
+                <div class="autor">
+                    <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="">
+                    <div>
+                        <strong>Lucía Fernández</strong>
+                        <span>Viñatera</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-simple animate-on-scroll from-left">
+                <div class="stars">★★★★★</div>
+                <p>"La capacitación fue excelente.  Ahora operamos nuestros propios drones con total confianza."</p>
+                <div class="autor">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+                    <div>
+                        <strong>Miguel Torres</strong>
+                        <span>Cooperativa Agrícola</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-simple animate-on-scroll from-bottom">
+                <div class="stars">★★★★★</div>
+                <p>"Redujimos el uso de agua un 85%.  Esto es sustentabilidad real, no solo palabras."</p>
+                <div class="autor">
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+                    <div>
+                        <strong>Ana Morales</strong>
+                        <span>Productora Orgánica</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-simple animate-on-scroll from-right">
+                <div class="stars">★★★★★</div>
+                <p>"El equipo de DroneAgro siempre está disponible. Su soporte post-servicio es excepcional."</p>
+                <div class="autor">
+                    <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+                    <div>
+                        <strong>Fernando López</strong>
+                        <span>Agrónomo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO TESTIMONIAL -->
+    <section id="video-testimonial">
+        <h2 class="animate-on-scroll">Mira lo que Logramos Juntos</h2>
+        <div class="video-container animate-on-scroll">
+            <div class="video-placeholder">
+                <div class="play-button">▶</div>
+                <p>Video:  Caso de Éxito - Finca El Progreso</p>
+                <span>Haz clic para reproducir</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASOS DE ÉXITO -->
+    <section id="casos-exito">
+        <h2 class="animate-on-scroll">Casos de Éxito</h2>
+        
+        <div class="casos-grid">
+            <div class="caso-card animate-on-scroll from-left">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=250&fit=crop" 
+                     alt="Caso Soja">
+                <div class="caso-content">
+                    <h4>Finca Santa María</h4>
+                    <span class="caso-tipo">Soja - 1,500 ha</span>
+                    <div class="caso-resultados">
+                        <div class="resultado">
+                            <strong>40%</strong>
+                            <span>Ahorro en químicos</span>
+                        </div>
+                        <div class="resultado">
+                            <strong>15%</strong>
+                            <span>↑ Rendimiento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caso-card animate-on-scroll from-bottom">
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&h=250&fit=crop" 
+                     alt="Caso Viñedo">
+                <div class="caso-content">
+                    <h4>Viñedos del Valle</h4>
+                    <span class="caso-tipo">Viñedo - 200 ha</span>
+                    <div class="caso-resultados">
+                        <div class="resultado">
+                            <strong>60%</strong>
+                            <span>↓ Tiempo aplicación</span>
+                        </div>
+                        <div class="resultado">
+                            <strong>25%</strong>
+                            <span>↑ Calidad uva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caso-card animate-on-scroll from-right">
+                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&h=250&fit=crop" 
+                     alt="Caso Arroz">
+                <div class="caso-content">
+                    <h4>Arrocera El Dorado</h4>
+                    <span class="caso-tipo">Arroz - 3,000 ha</span>
+                    <div class="caso-resultados">
+                        <div class="resultado">
+                            <strong>90%</strong>
+                            <span>↓ Uso de agua</span>
+                        </div>
+                        <div class="resultado">                            <strong>20%</strong>
+                            <span> Producción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>DroneAgro</h4>
+                <p>Tecnología de precisión para la agricultura del futuro.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="servicios.html">Fumigación</a></li>
+                    <li><a href="servicios.html">Fertilización</a></li>
+                    <li><a href="servicios.html">Mapeo</a></li>
+                    <li><a href="servicios.html">Capacitación</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Av. Agricultura 1234</p>
+                <p>+1 234 567 890</p>
+                <p>info@droneagro.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DroneAgro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>

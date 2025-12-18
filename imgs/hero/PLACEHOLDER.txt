@@ -1,0 +1,21 @@
+# PLACEHOLDER - Hero
+
+Esta carpeta es para imágenes de fondo del Hero (opcional, si no usas video).
+
+**ARCHIVO OPCIONAL:**
+- `hero-bg.jpg` (1920x1080px, máx 500KB)
+
+**Nota:** Si tienes video en `media/hero-video.mp4`, no necesitas imagen aquí.
+
+**Uso:**
+- Imagen de fondo alternativa si el video no carga
+- Imagen para dispositivos móviles (más ligera que video)
+- Poster del video (imagen que se muestra antes de que cargue)
+
+**Cómo añadir:**
+1. Si quieres usar imagen en lugar de video:
+   - Guardar como `hero-bg.jpg`
+   - Modificar HTML para usar <img> en lugar de <video>
+2. Si es poster de video:
+   - Guardar como `hero-poster.jpg`
+   - Añadir atributo `poster="imgs/hero/hero-poster.jpg"` al tag <video>

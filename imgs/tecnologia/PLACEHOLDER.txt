@@ -1,0 +1,26 @@
+# PLACEHOLDER - Tecnología
+
+Esta carpeta es para fotos de los drones y tecnología utilizada.
+
+**ARCHIVOS SUGERIDOS:**
+- `dron-1.jpg` (800x600px, máx 200KB)
+- `dron-2.jpg` (800x600px, máx 200KB)
+- `dron-3.jpg` (opcional)
+
+**Contenido sugerido:**
+- Fotos de los drones en detalle
+- Equipos y sensores
+- Tecnología DJI Agras (o marca utilizada)
+- Drones en estación de carga
+- Panel de control/software
+
+**Uso en el sitio:**
+- Página "Nosotros" (sección tecnología)
+- Página "Servicios" (equipos utilizados)
+
+**Cómo añadir:**
+1. Recibir fotos de equipos del cliente
+2. Seleccionar fotos de alta calidad
+3. Renombrar como `dron-1.jpg`, `dron-2.jpg`, etc.
+4. Guardar en esta carpeta
+5. Eliminar este PLACEHOLDER.txt

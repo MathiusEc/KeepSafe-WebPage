@@ -1,0 +1,22 @@
+# PLACEHOLDER - Equipo
+
+Esta carpeta debe contener fotos del equipo/personal.
+
+**ARCHIVOS NECESARIOS:**
+- `persona-1.jpg` (400x400px cuadrada, máx 100KB)
+- `persona-2.jpg` (400x400px cuadrada, máx 100KB)
+- `persona-3.jpg` (400x400px cuadrada, máx 100KB)
+- `persona-4.jpg` (400x400px cuadrada, máx 100KB)
+
+**Requisitos:**
+- Fotos profesionales con fondo limpio
+- Formato cuadrado (1:1)
+- Buena iluminación
+- Rostros claramente visibles
+
+**Cómo añadir:**
+1. Recibir fotos del cliente
+2. Recortar a formato cuadrado (400x400px)
+3. Renombrar como `persona-1.jpg`, `persona-2.jpg`, etc.
+4. Guardar en esta carpeta
+5. Eliminar este PLACEHOLDER.txt

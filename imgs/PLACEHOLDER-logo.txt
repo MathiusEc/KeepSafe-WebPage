@@ -1,0 +1,15 @@
+# PLACEHOLDER - Logo
+
+Este archivo es un placeholder. 
+
+**REEMPLAZAR CON:**
+- Logo de la empresa (formato SVG o PNG con fondo transparente)
+- Tamaño: Variable (recomendado 300x80px)
+- Peso máximo: 100KB
+
+**Ubicación:** `imgs/logo.svg` o `imgs/logo.png`
+
+**Cómo añadir:**
+1. Recibir logo del cliente
+2. Guardar en esta carpeta como `logo.svg` o `logo.png`
+3. Eliminar este archivo PLACEHOLDER.txt
