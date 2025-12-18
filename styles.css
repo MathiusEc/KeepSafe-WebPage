@@ -91,7 +91,6 @@ body.loading {
     height: 100%;
     background: var(--gradient-primary);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 10000;
@@ -103,13 +102,6 @@ body.loading {
     visibility: hidden;
 }
 
-.loader-icon {
-    font-size: 4rem;
-    animation: droneFloat 2s ease-in-out infinite;
-    margin-bottom: 1rem;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-}
-
 .loader-spinner {
     width: 60px;
     height: 60px;
@@ -117,11 +109,6 @@ body.loading {
     border-top-color: var(--color-white);
     border-radius: 50%;
     animation: spin 1s linear infinite;
-}
-
-@keyframes droneFloat {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(5deg); }
 }
 
 @keyframes spin {
