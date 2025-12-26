@@ -348,21 +348,72 @@ function showFormMessage(element, message, type) {
    TEXTO ROTATIVO
    ============================================ */
 
+/* ============================================
+   TEXTO ROTATIVO MEJORADO - SIN BUGS
+   ============================================ */
 function rotatingText() {
-    const textElements = document.querySelectorAll('.rotating-text span');
+    const container = document.querySelector('.rotating-text-container');
+    if (!container) return;
+    
+    const textElements = container.querySelectorAll('.rotating-text span');
     if (!textElements.length) return;
     
     let currentIndex = 0;
+    let intervalId = null;
+    let isVisible = true;
     
-    setInterval(() => {
+    // Inicializar: ocultar todos excepto el primero
+    textElements.forEach((el, index) => {
+        el.style.opacity = index === 0 ? '1' : '0';
+        el.style.transform = index === 0 ? 'translateY(0)' : 'translateY(20px)';
+        el.style.position = 'absolute';
+        el.style.left = '0';
+        el.style.top = '0';
+        el.style.width = '100%';
+    });
+    
+    function rotateToNext() {
+        if (!isVisible) return;
+        
+        // Ocultar el actual
         textElements[currentIndex].style.opacity = '0';
         textElements[currentIndex].style.transform = 'translateY(-20px)';
         
+        // Calcular el siguiente índice
         currentIndex = (currentIndex + 1) % textElements.length;
         
-        textElements[currentIndex].style.opacity = '1';
-        textElements[currentIndex].style.transform = 'translateY(0)';
-    }, 3000);
+        // Mostrar el siguiente
+        setTimeout(() => {
+            textElements[currentIndex].style.opacity = '1';
+            textElements[currentIndex].style.transform = 'translateY(0)';
+        }, 300);
+    }
+    
+    // Usar IntersectionObserver para pausar cuando no está visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            isVisible = entry.isIntersecting;
+            
+            if (isVisible && !intervalId) {
+                // Reiniciar la animación cuando vuelve a ser visible
+                intervalId = setInterval(rotateToNext, 3000);
+            } else if (!isVisible && intervalId) {
+                // Pausar cuando no está visible
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(container);
+    
+    // Iniciar la animación
+    intervalId = setInterval(rotateToNext, 3000);
+    
+    // Limpiar el intervalo cuando se descarga la página
+    window.addEventListener('beforeunload', () => {
+        if (intervalId) clearInterval(intervalId);
+    });
 }
 
 /* ============================================
