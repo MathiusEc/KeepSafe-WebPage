@@ -365,7 +365,7 @@ function rotatingText() {
     // Inicializar: ocultar todos excepto el primero
     textElements.forEach((el, index) => {
         el.style.opacity = index === 0 ? '1' : '0';
-        el.style.transform = index === 0 ? 'translateY(0)' : 'translateY(20px)';
+        el.style.transform = index === 0 ? 'translateY(0)' : 'translateY(100%)';
         el.style.position = 'absolute';
         el.style.left = '0';
         el.style.top = '0';
@@ -375,18 +375,22 @@ function rotatingText() {
     function rotateToNext() {
         if (!isVisible) return;
         
-        // Ocultar el actual
+        // Ocultar el actual: sale hacia arriba
         textElements[currentIndex].style.opacity = '0';
-        textElements[currentIndex].style.transform = 'translateY(-20px)';
+        textElements[currentIndex].style.transform = 'translateY(-100%)';
         
         // Calcular el siguiente índice
         currentIndex = (currentIndex + 1) % textElements.length;
         
-        // Mostrar el siguiente
+        // Preparar el siguiente desde abajo
+        textElements[currentIndex].style.transform = 'translateY(100%)';
+        textElements[currentIndex].style.opacity = '0';
+        
+        // Mostrar el siguiente: entra desde abajo
         setTimeout(() => {
             textElements[currentIndex].style.opacity = '1';
             textElements[currentIndex].style.transform = 'translateY(0)';
-        }, 300);
+        }, 400);
     }
     
     // Usar IntersectionObserver para pausar cuando no está visible
