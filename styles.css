@@ -2793,6 +2793,10 @@ footer::before {
         font-size: 1.1rem;
     }
 
+    .hero-video {
+        object-position: center 30%;
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
