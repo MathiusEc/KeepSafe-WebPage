@@ -200,7 +200,7 @@ nav {
 }
 
 .logo img {
-    height: 55px;
+    height: 70px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 8px rgba(30, 95, 158, 0.2));
@@ -213,7 +213,7 @@ nav {
 }
 
 .logo-img {
-    height: 55px;
+    height: 70px;
     width: auto;
 }
 
