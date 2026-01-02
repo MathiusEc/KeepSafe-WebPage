@@ -326,6 +326,10 @@ nav {
     padding: 0 2rem;
     padding-top: 80px;
     overflow: hidden;
+    /* Optimización para scroll suave */
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 /* Patrón geométrico de fondo */
@@ -341,6 +345,8 @@ nav {
         repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255,255,255,0.03) 35px, rgba(255,255,255,0.03) 70px);
     z-index: 1;
     pointer-events: none;
+    /* Optimización */
+    will-change: auto;
 }
 
 /* Hexágonos flotantes decorativos */
@@ -356,12 +362,15 @@ nav {
     opacity: 0.3;
     animation: floatHexagon 20s ease-in-out infinite;
     z-index: 1;
+    /* Optimización para animación suave */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 @keyframes floatHexagon {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    33% { transform: translate(30px, -30px) rotate(120deg); }
-    66% { transform: translate(-20px, 40px) rotate(240deg); }
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+    33% { transform: translate3d(30px, -30px, 0) rotate(120deg); }
+    66% { transform: translate3d(-20px, 40px, 0) rotate(240deg); }
 }
 
 .hero-video {
@@ -370,8 +379,17 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
+    /* Mejorar calidad visual de la imagen */
     object-fit: cover;
+    object-position: center center;
     z-index: 0;
+    /* Optimización crítica para scroll suave */
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    /* Suavizar la imagen cuando se escala */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 .hero-overlay {

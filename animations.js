@@ -245,9 +245,13 @@ window.addEventListener('scroll', () => {
 });
 
 /* ============================================
-   EFECTO PARALLAX
+   EFECTO PARALLAX - DESACTIVADO para mejor performance
    ============================================ */
 
+// Parallax desactivado para scroll suave y mejor experiencia visual
+// Si deseas reactivarlo, descomenta la función parallaxEffect() y el event listener
+
+/*
 function parallaxEffect() {
     const hero = document.getElementById('hero');
     if (!hero) return;
@@ -269,6 +273,7 @@ function parallaxEffect() {
 }
 
 window.addEventListener('scroll', parallaxEffect);
+*/
 
 /* ============================================
    FORMULARIO DE CONTACTO
