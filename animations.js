@@ -594,6 +594,35 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.body.classList.add('loaded');
     
+    // Hacer clickeables las tarjetas de servicios en móviles
+    const servicioCards = document.querySelectorAll('.servicio-card');
+    servicioCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Evitar doble navegación si ya se hizo clic en el enlace
+            if (e.target.tagName === 'A') return;
+            
+            const link = this.querySelector('.btn-link');
+            if (link) {
+                window.location.href = link.getAttribute('href');
+            }
+        });
+        
+        // Mejorar accesibilidad
+        card.setAttribute('role', 'link');
+        card.setAttribute('tabindex', '0');
+        
+        // Permitir navegación con teclado
+        card.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                const link = this.querySelector('.btn-link');
+                if (link) {
+                    window.location.href = link.getAttribute('href');
+                }
+            }
+        });
+    });
+    
     console.log('🚁 DroneAgro - Sitio web premium cargado correctamente');
     console.log('✨ Efectos premium activos: glassmorphism, hexágonos, gradientes');
 });
