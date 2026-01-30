@@ -195,19 +195,44 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav_links');
 
 if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
+    let menuAnimating = false;
+    const MENU_ANIMATION_TIMEOUT = 500; // ms fallback
+
+    const onNavTransitionEnd = (e) => {
+        // listen for max-height or opacity to consider the animation finished
+        if (e.propertyName === 'max-height' || e.propertyName === 'opacity') {
+            menuAnimating = false;
+            navLinks.removeEventListener('transitionend', onNavTransitionEnd);
+        }
+    };
+
+    menuToggle.addEventListener('click', (e) => {
+        if (menuAnimating) return; // ignore rapid clicks
+        menuAnimating = true;
+
         navLinks.classList.toggle('active');
         menuToggle.classList.toggle('active');
+
+        // Resolve animation state on transition end, with a fallback timeout
+        navLinks.addEventListener('transitionend', onNavTransitionEnd);
+        setTimeout(() => {
+            if (menuAnimating) {
+                menuAnimating = false;
+                navLinks.removeEventListener('transitionend', onNavTransitionEnd);
+            }
+        }, MENU_ANIMATION_TIMEOUT);
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
+            if (menuAnimating) return;
             navLinks.classList.remove('active');
             menuToggle.classList.remove('active');
         });
     });
 
     document.addEventListener('click', (e) => {
+        if (menuAnimating) return;
         if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
             navLinks.classList.remove('active');
             menuToggle.classList.remove('active');

@@ -144,6 +144,10 @@ header {
     box-shadow: 0 4px 30px rgba(15, 58, 92, 0.08);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     transition: var(--transition-base);
+    height: 130px; /* aumentar altura del header para alojar el logo */
+    overflow: hidden; /* evitar que el logo sobresalga del header */
+    display: flex; /* centrar verticalmente el nav dentro del header */
+    align-items: center;
 }
 
 header.scrolled {
@@ -159,10 +163,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 3rem;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 0 2rem;   /* control horizontal del espacio (gutter) */
+    width: 100%;
+    max-width: 1200px; /* limitar ancho y centrar contenido dentro del header */
+    margin: 0 auto;    /* centra el nav dentro del header para evitar elementos en los extremos */
     position: relative;
+    height: 100%;      /* que el nav ocupe toda la altura del header */
 }
 
 /* Logo con efecto */
@@ -174,7 +180,7 @@ nav {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    margin-right: auto;
+    margin-right: 0;
     letter-spacing: -0.5px;
     transition: var(--transition-base);
     position: relative;
@@ -200,11 +206,12 @@ nav {
 }
 
 .logo img {
-    height: 70px;
+    max-height: 120px; /* restaurado: tamaño anterior más grande */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 8px rgba(30, 95, 158, 0.2));
     transition: var(--transition-base);
+    margin-top: 0; /* asegurarse que no sobresalga */
 }
 
 .logo:hover img {
@@ -213,8 +220,24 @@ nav {
 }
 
 .logo-img {
-    height: 70px;
+    max-height: 120px;
     width: auto;
+}
+
+@media (max-width: 900px) {
+    header { height: 110px; }
+    nav { padding: 0.6rem 1.2rem; max-width: 1000px; }
+    .logo img, .logo-img { max-height: 96px; }
+}
+
+@media (max-width: 600px) {
+    header { height: 112px; }
+    nav { padding: 0.5rem 1.2rem; }
+    .logo img,
+    .logo-img {
+        max-height: 92px; /* un poco más grande en móvil */
+        margin-top: 0; /* evitar desbordes en móvil */
+    }
 }
 
 /* Navegación con efectos premium */
@@ -2754,36 +2777,70 @@ footer::before {
 
 @media (max-width: 768px) {
     /* Header */
+    header { overflow: visible; } /* permitir que el dropdown no quede recortado */
     .nav_links {
-        display:  none;
+        /* mantener layout flex pero oculto mediante max-height para animar */
+        display: flex;
         position: absolute;
         top: 100%;
-        left:  0;
+        left: 0;
         width: 100%;
         background: white;
         flex-direction: column;
         text-align: center;
-        padding: 1rem;
+        padding: 0 1rem;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         gap: 0;
+        z-index: 1500;
+        max-height: 0; /* colapsado */
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.36s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.24s ease;
+        pointer-events: none;
     }
 
     .nav_links.active {
-        display: flex;
+        max-height: 480px; /* suficiente para mostrar los items */
+        opacity: 1;
+        padding: 1rem;
+        pointer-events: auto;
     }
 
     .nav_links li {
         padding: 0.75rem 0;
         border-bottom: 1px solid #eee;
+        transform: translateY(-8px);
+        opacity: 0;
+        transition: transform 0.28s ease, opacity 0.28s ease;
     }
 
-    .nav_links li:last-child {
-        border-bottom: none;
+    /* Cuando el menú está activo, animar cada ítem con pequeño retraso */
+    .nav_links.active li {
+        transform: translateY(0);
+        opacity: 1;
     }
+
+    .nav_links.active li:nth-child(1) { transition-delay: 0.04s; }
+    .nav_links.active li:nth-child(2) { transition-delay: 0.08s; }
+    .nav_links.active li:nth-child(3) { transition-delay: 0.12s; }
+    .nav_links.active li:nth-child(4) { transition-delay: 0.16s; }
+    .nav_links.active li:nth-child(5) { transition-delay: 0.20s; }
+
+    .nav_links li:last-child { border-bottom: none; }
 
     .menu-toggle {
-        display:  flex;
+        display: flex;
+        z-index: 1600; /* asegurar que el botón esté por encima */
+        transition: transform 0.28s ease;
     }
+
+    /* Animación extra para las barras del toggle cuando se activa */
+    .menu-toggle span {
+        transition: transform 0.28s ease, opacity 0.28s ease, background-color 0.2s;
+    }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; transform: translateX(-10px); }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
 
     /* Hero */
     #hero {
