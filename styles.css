@@ -3494,3 +3494,14 @@ footer::before {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================
+   AJUSTES PARA CONTACTANOS.HTML
+   ============================================ */
+#empresa-intro {
+    margin-bottom: 0;
+}
+
+#contacto-info {
+    margin-bottom: 0;
+}
