@@ -7,6 +7,102 @@
 document.body.classList.add('js-enabled');
 
 /* ============================================
+   HERO CAROUSEL - Carrusel automático de imágenes
+   ============================================ */
+class HeroCarousel {
+    constructor() {
+        this.slides = document.querySelectorAll('.hero-slide');
+        this.currentSlide = 0;
+        this.visibleTime = 2700; // Tiempo visible real
+        this.transitionTime = 600; // Tiempo de fade
+        this.isTransitioning = false;
+        this.firstTransitionDone = false;
+        
+        if (this.slides.length > 1) {
+            this.init();
+        }
+    }
+    
+    init() {
+        // Iniciar el carrusel automático
+        this.startAutoplay();
+        
+        // Pausar solo al pasar el cursor sobre las imágenes
+        const carousel = document.querySelector('.hero-carousel');
+        if (carousel) {
+            carousel.addEventListener('mouseenter', () => this.pauseAutoplay());
+            carousel.addEventListener('mouseleave', () => this.startAutoplay());
+        }
+        
+        // Pausar cuando la página no está visible
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                this.pauseAutoplay();
+            } else {
+                this.startAutoplay();
+            }
+        });
+    }
+    
+    nextSlide() {
+        if (this.isTransitioning) return;
+        this.isTransitioning = true;
+        const currentSlideElement = this.slides[this.currentSlide];
+        
+        // Calcular el siguiente slide
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+        const nextSlideElement = this.slides[this.currentSlide];
+        
+        // Animación de salida del slide actual
+        currentSlideElement.classList.add('fade-out');
+        
+        // Después de un pequeño delay, mostrar el siguiente slide
+        setTimeout(() => {
+            currentSlideElement.classList.remove('active', 'fade-out');
+            nextSlideElement.classList.add('active');
+            this.isTransitioning = false;
+        }, this.transitionTime);
+    }
+    
+    startAutoplay() {
+        this.pauseAutoplay(); // Limpiar intervalo previo
+        if (!this.firstTransitionDone) {
+            setTimeout(() => {
+                this.nextSlide();
+                this.firstTransitionDone = true;
+                this.autoplayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, this.visibleTime + this.transitionTime);
+            }, 1000); // Primer cambio tras 1 segundo
+        } else {
+            this.autoplayInterval = setInterval(() => {
+                this.nextSlide();
+            }, this.visibleTime + this.transitionTime);
+        }
+    }
+    
+    pauseAutoplay() {
+        if (this.autoplayInterval) {
+            clearInterval(this.autoplayInterval);
+            this.autoplayInterval = null;
+        }
+    }
+    
+    // Método público para cambiar la velocidad
+    setSpeed(newSpeed) {
+        this.slideInterval = newSpeed;
+        if (this.autoplayInterval) {
+            this.startAutoplay();
+        }
+    }
+}
+
+// Inicializar el carrusel cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    window.heroCarousel = new HeroCarousel();
+});
+
+/* ============================================
    LOADING ANIMATION INICIAL
    ============================================ */
 window.addEventListener('load', () => {
