@@ -3506,10 +3506,18 @@ footer::before {
     margin-bottom: 0;
 }
 
-.servicio-icon svg,
-.porque-icon svg {
+.servicio-icon svg {
     width: 48px;
     height: 48px;
     color: var(--primary-color);
     flex-shrink: 0;
+}
+
+.porque-icon svg {
+    width: 80px;
+    height: 80px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
 }
