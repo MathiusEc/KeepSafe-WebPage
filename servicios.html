@@ -34,12 +34,55 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Servicios de Drones Agrícolas - DroneAgro">
+    <meta name="twitter:title" content="Servicios de Drones Agrícolas - Keep Safe">
     <meta name="twitter:description" content="Servicios profesionales de fumigación, mapeo y monitoreo con drones.">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- ⚙️ EDITAR: Canonical URL -->
+    <link rel="canonical" href="https://TU-DOMINIO.com/servicios.html" />
+    
+    <!-- Structured Data para Servicios -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Servicios de Drones Agrícolas",
+      "provider": {
+        "@type": "Organization",
+        "name": "Keep Safe S.A.S."
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Ecuador"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios con Drones",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fumigación con Drones"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fertilización Aérea"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mapeo y Monitoreo de Cultivos"
+            }
+          }
+        ]
+      }
+    }
+    </script>
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">

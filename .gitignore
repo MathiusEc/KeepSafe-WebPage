@@ -50,9 +50,18 @@ build/
 .cache/
 .parcel-cache/
 
-# Archivos personales/desarrollo
+# Archivos personales/desarrollo (documentación)
 _GUIA_RAPIDA_EDICION.md
 GUIA_EFECTOS.html
+INSTRUCCIONES_DESPLIEGUE.md
+IMAGENES_REQUERIDAS.md
+RESUMEN_COMPLETO.md
+GUIA_GITHUB_PAGES.md
+CNAME_README.md
 
 # Placeholder files (temporales)
 **/PLACEHOLDER*.txt
+
+# Archivos de hosting tradicional (no se usan en GitHub Pages)
+.htaccess
+security.txt

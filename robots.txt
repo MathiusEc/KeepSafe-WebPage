@@ -1,0 +1,9 @@
+# ⚙️ EDITAR: Cuando tengas tu dominio, actualiza el Sitemap con tu URL
+User-agent: *
+Allow: /
+
+# Bloquear páginas de error
+Disallow: /404.html
+
+# ⚙️ EDITAR: Reemplaza "https://TU-DOMINIO.com" con tu dominio real
+Sitemap: https://TU-DOMINIO.com/sitemap.xml
