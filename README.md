@@ -73,15 +73,6 @@ Archivos a editar:
 - `nosotros.html` (meta tags)
 - `contactanos.html` (meta tags)
 
-## 🖼️ Imágenes Requeridas
-
-Crear y agregar estas imágenes antes de desplegar:
-
-- **imgs/og-image.jpg** (1200x630px) - Para Facebook/WhatsApp
-- **imgs/twitter-card.jpg** (1200x600px) - Para Twitter
-- **imgs/logo.png** (512x512px) - Logo en alta resolución
-
-Ver guía completa en `IMAGENES_REQUERIDAS.md`
 
 ## 🚀 Deploy en GitHub Pages
 
