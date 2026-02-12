@@ -92,27 +92,29 @@ Files to edit:
 
 ## Deploy on GitHub Pages
 
-### Option A: From GitHub website (Recommended)
+### About Deployment and Repository Visibility
 
-1. Upload files to GitHub:
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
+This website is hosted using GitHub Pages, a service that allows anyone to publish static sites directly from a public GitHub repository. All content in this repository—including HTML, CSS, JavaScript, and media files—is visible to the public. This ensures transparency and easy access for clients, collaborators, and visitors.
 
-2. On GitHub, go to: **Settings** → **Pages**
-3. In "Source": select **main branch** → **/ (root)**
-4. Click **Save**
-5. Your site will be at `https://YOUR-USER.github.io/YOUR-REPOSITORY/`
+**Why public?**
+- GitHub Pages requires the repository to be public for free hosting.
+- All website files are accessible for review, learning, or collaboration.
+- Clients and users can see exactly what is deployed, including code and assets.
 
-### Option B: Using GitHub Desktop
+**Custom Domain**
+- If a custom domain is configured, a `CNAME` file is included specifying the domain name.
+- DNS settings are managed by the domain provider to point to GitHub Pages.
 
-1. Open GitHub Desktop
-2. **File** → **Add Local Repository**
-3. Select this folder
-4. **Publish repository**
-5. On GitHub.com: **Settings** → **Pages** → Enable
+**Security and Privacy**
+- No sensitive or private information is stored in this repository.
+- All content is intended for public viewing and corporate communication.
+
+**Live Site**
+- The website is always available at the GitHub Pages URL:
+   `https://YOUR-USER.github.io/YOUR-REPOSITORY/`
+- If a custom domain is set, it will redirect to the corporate domain (e.g., `www.keepsafe.com.ec`).
+
+For more information about GitHub Pages, visit: https://docs.github.com/en/pages
 
 ## SEO & Performance
 
