@@ -1,71 +1,87 @@
-# 🚁 Keep Safe - Sitio Web de Agricultura de Precisión con Drones
+# Keep Safe - Precision Agriculture Drone Website
 
-Sitio web corporativo para servicios de fumigación y fertilización con drones en Ecuador.
+Corporate website for drone spraying and fertilization services in Ecuador.
 
-## 🌐 Sitio en Vivo
+## Live Site
 
-**URL temporal:** `https://TU-USUARIO.github.io/TU-REPOSITORIO/`  
-**⚙️ EDITAR:** Cuando configures tu dominio personalizado
+**Temporary URL:** `https://YOUR-USER.github.io/YOUR-REPOSITORY/`  
+**Edit:** When you set up your custom domain
 
-## 🚀 Tecnologías
+## Technologies
 
-- HTML5 Semántico
-- CSS3 (Animaciones y efectos modernos)
-- JavaScript Vanilla
-- Diseño Responsive Mobile-First
-- SEO Optimizado
+- Semantic HTML5
+- CSS3 (Modern animations and effects)
+- Vanilla JavaScript
+- Mobile-First Responsive Design
+- SEO Optimized
 - Schema.org (Structured Data)
 
-## 📂 Estructura del Proyecto
+## Project Structure
 
 ```
 .
-├── index.html              # Página principal
-├── servicios.html          # Página de servicios
-├── nosotros.html           # Página sobre nosotros
-├── contactanos.html        # Página de contacto
-├── 404.html                # Página de error personalizada
-├── styles.css              # Estilos principales
-├── animations.js           # Animaciones y efectos
-├── robots.txt              # Configuración para buscadores
-├── sitemap.xml             # Mapa del sitio
-├── CNAME                   # Dominio personalizado (editar)
-├── imgs/                   # Imágenes y recursos
+├── index.html              # Home page
+├── servicios.html          # Services page
+├── nosotros.html           # About us page
+├── contactanos.html        # Contact page
+├── 404.html                # Custom error page
+├── styles.css              # Main styles
+├── animations.js           # Animations and effects
+├── robots.txt              # Search engine configuration
+├── sitemap.xml             # Sitemap
+├── CNAME                   # Custom domain (edit)
+├── imgs/                   # Images and assets
 │   ├── icons/              # Favicons
-│   ├── hero/               # Imágenes hero
-│   ├── servicios/          # Imágenes de servicios
-│   ├── equipo/             # Fotos del equipo
-│   └── og-image.jpg        # Imagen para redes sociales
+│   ├── hero/               # Hero images
+│   ├── servicios/          # Service images
+│   ├── equipo/             # Team photos
+│   └── og-image.jpg        # Social media image
 └── media/                  # Videos
 
 ```
 
-## ⚙️ Configuración Inicial
+## Initial Setup
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 ```bash
 git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
 cd TU-REPOSITORIO
 ```
 
-### 2. Configurar tu dominio personalizado (Opcional)
+### 2. Set up your custom domain (Optional)
 
-Si tienes un dominio:
-1. Editar el archivo `CNAME` con tu dominio (ej: `www.keepsafe.com.ec`)
-2. Configurar DNS en tu proveedor de dominio:
+If you have a domain:
+1. Edit the `CNAME` file with your domain (e.g., `www.keepsafe.com.ec`)
+2. Set up DNS with your domain provider:
    ```
-   Tipo: CNAME
-   Nombre: www
-   Valor: TU-USUARIO.github.io
+   Type: CNAME
+   Name: www
+   Value: YOUR-USER.github.io
    ```
 
 ### 3. Editar URLs en el código
 
-Buscar y reemplazar `TU-DOMINIO.com` con:
+- Si usas dominio personalizado: `www.tudominio.com`
+- Si usas GitHub Pages: `TU-USUARIO.github.io/TU-REPOSITORIO`
+Find and replace `YOUR-DOMAIN.com` with:
+- If using a custom domain: `www.yourdomain.com`
+- If using GitHub Pages: `YOUR-USER.github.io/YOUR-REPOSITORY`
 - Si usas dominio personalizado: `www.tudominio.com`
 - Si usas GitHub Pages: `TU-USUARIO.github.io/TU-REPOSITORIO`
 
-Archivos a editar:
+- `sitemap.xml`
+- `robots.txt`
+- `index.html` (meta tags)
+- `servicios.html` (meta tags)
+- `nosotros.html` (meta tags)
+- `contactanos.html` (meta tags)
+Files to edit:
+- `sitemap.xml`
+- `robots.txt`
+- `index.html` (meta tags)
+- `servicios.html` (meta tags)
+- `nosotros.html` (meta tags)
+- `contactanos.html` (meta tags)
 - `sitemap.xml`
 - `robots.txt`
 - `index.html` (meta tags)
@@ -74,77 +90,97 @@ Archivos a editar:
 - `contactanos.html` (meta tags)
 
 
-## 🚀 Deploy en GitHub Pages
+## Deploy on GitHub Pages
 
-### Opción A: Desde la web de GitHub (Más fácil)
+### Option A: From GitHub website (Recommended)
 
-1. Subir archivos a GitHub:
+1. Upload files to GitHub:
    ```bash
    git add .
    git commit -m "Initial commit"
    git push origin main
    ```
 
-2. En GitHub, ir a: **Settings** → **Pages**
-3. En "Source": seleccionar **main branch** → **/ (root)**
-4. Click en **Save**
-5. ¡Listo! Tu sitio estará en `https://TU-USUARIO.github.io/TU-REPOSITORIO/`
+2. On GitHub, go to: **Settings** → **Pages**
+3. In "Source": select **main branch** → **/ (root)**
+4. Click **Save**
+5. Your site will be at `https://YOUR-USER.github.io/YOUR-REPOSITORY/`
 
-### Opción B: Con GitHub Desktop
+### Option B: Using GitHub Desktop
 
-1. Abrir GitHub Desktop
+1. Open GitHub Desktop
 2. **File** → **Add Local Repository**
-3. Seleccionar esta carpeta
+3. Select this folder
 4. **Publish repository**
-5. En GitHub.com: **Settings** → **Pages** → Activar
+5. On GitHub.com: **Settings** → **Pages** → Enable
 
-## 📊 SEO y Performance
+## SEO & Performance
 
-El sitio incluye:
+- Meta tags optimizados
+- Open Graph (Facebook, WhatsApp)
+- Twitter Cards
+- Structured Data (Schema.org)
+- Sitemap XML
+- robots.txt
+- Canonical URLs
+- Responsive design
+- Lazy loading de imágenes
+- Animaciones optimizadas
+The site includes:
+- Optimized meta tags
+- Open Graph (Facebook, WhatsApp)
+- Twitter Cards
+- Structured Data (Schema.org)
+- Sitemap XML
+- robots.txt
+- Canonical URLs
+- Responsive design
+- Lazy loading for images
+- Optimized animations
 
-- ✅ Meta tags optimizados
-- ✅ Open Graph (Facebook, WhatsApp)
-- ✅ Twitter Cards
-- ✅ Structured Data (Schema.org)
-- ✅ Sitemap XML
-- ✅ robots.txt
-- ✅ Canonical URLs
-- ✅ Responsive design
-- ✅ Lazy loading de imágenes
-- ✅ Animaciones optimizadas
+- Meta tags optimizados
+- Open Graph (Facebook, WhatsApp)
+- Twitter Cards
+- Structured Data (Schema.org)
+- Sitemap XML
+- robots.txt
+- Canonical URLs
+- Responsive design
+- Lazy loading de imágenes
+- Animaciones optimizadas
 
-## 🔧 Desarrollo Local
+## Local Development
 
-Para probar en local:
+To test locally:
 
-### Con Python 3:
+### With Python 3:
 ```bash
 python -m http.server 8000
 ```
 
-### Con Node.js:
+### With Node.js:
 ```bash
 npx serve
 ```
 
-### Con VS Code:
-Instalar extensión "Live Server" y hacer clic derecho → "Open with Live Server"
+### With VS Code:
+Install the "Live Server" extension and right-click → "Open with Live Server"
 
-Luego abrir: `http://localhost:8000`
+Then open: `http://localhost:8000`
 
-## 📱 Compatibilidad
+## Compatibility
 
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
-- ✅ iOS Safari 14+
-- ✅ Chrome Android
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+- iOS Safari 14+
+- Chrome Android
 
-## 🎨 Personalización
+## Customization
 
-### Colores corporativos:
-Editar en `styles.css`:
+### Corporate colors:
+Edit in `styles.css`:
 ```css
 :root {
     --primary-color: #2ECC71;
@@ -153,19 +189,19 @@ Editar en `styles.css`:
 }
 ```
 
-### Contenido:
-Ver guía en `_GUIA_RAPIDA_EDICION.md`
+### Content:
+See the guide in `_GUIA_RAPIDA_EDICION.md`
 
-## 📝 Licencia
+## License
 
-© 2026 Keep Safe S.A.S. Todos los derechos reservados.
+© 2026 Keep Safe S.A.S. All rights reserved.
 
-## 📞 Contacto
+## Contact
 
 - **Email:** contacto@keepsafe.com.ec
-- **Teléfono:** +593 XX XXX XXXX
-- **Ubicación:** Guayaquil, Ecuador
+- **Phone:** +593 XX XXX XXXX
+- **Location:** Guayaquil, Ecuador
 
 ---
 
-**Desarrollado con ❤️ para Keep Safe**
+Developed for Keep Safe
