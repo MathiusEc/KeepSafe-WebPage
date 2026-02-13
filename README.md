@@ -48,8 +48,7 @@ This repository is for documentation and backup purposes only.
 
 ## Author
 
-Project developed by Mathías for Keep Safe S.A.S.
-Contact: contacto@keepsafe.com.ec
+Project developed by MathiusEc for Keep Safe S.A.S.
 
 ## License
 
