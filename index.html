@@ -122,8 +122,14 @@
     <section id="hero">
         <!-- Carrusel de imágenes con JavaScript -->
         <div class="hero-carousel">
-            <img src="imgs/index.png" alt="Keep Safe - Agricultura de Precisión" class="hero-slide active">
-            <img src="imgs/KEEP SAFE LOGO-03.png" alt="Keep Safe - Tecnología de Drones" class="hero-slide">
+            <picture>
+                <source srcset="imgs/index-mobile.jpg" media="(max-width: 600px)">
+                <img src="imgs/index.png" alt="Keep Safe - Agricultura de Precisión" class="hero-slide active">
+            </picture>
+            <picture>
+                <source srcset="imgs/KEEP-SAFE-LOGO-03-mobile.jpg" media="(max-width: 600px)">
+                <img src="imgs/KEEP SAFE LOGO-03.png" alt="Keep Safe - Tecnología de Drones" class="hero-slide">
+            </picture>
         </div>
 
         <div class="hero-overlay"></div>
@@ -131,7 +137,7 @@
         <!-- Contenido principal del hero -->
         <div class="hero-content">
             <!-- Título principal (H1) - Lo primero que ve el cliente -->
-            <h1 class="fade-in-up">EDITAR: Título Principal Impactante</h1>
+            <h1 class="fade-in-up">Agricultura 4.0</h1>
             <!-- Subtítulo con textos rotativos -->
             <p class="fade-in-up delay-1">
                 Bienvenido a la Agricultura 4.0
