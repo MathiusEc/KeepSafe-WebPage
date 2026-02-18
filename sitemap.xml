@@ -3,7 +3,7 @@
     
     <!-- Página Principal -->
     <url>
-        <loc>https://mathiusec.github.io/KeepSafe-WebPage/</loc>
+        <loc>https://www.keepsafeagriculture.com/</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -11,7 +11,7 @@
     
     <!-- Servicios -->
     <url>
-        <loc>https://mathiusec.github.io/KeepSafe-WebPage/servicios.html</loc>
+        <loc>https://www.keepsafeagriculture.com/servicios/</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -19,7 +19,7 @@
     
     <!-- Nosotros -->
     <url>
-        <loc>https://mathiusec.github.io/KeepSafe-WebPage/nosotros.html</loc>
+        <loc>https://www.keepsafeagriculture.com/nosotros/</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -27,7 +27,7 @@
     
     <!-- Contacto -->
     <url>
-        <loc>https://mathiusec.github.io/KeepSafe-WebPage/contactanos.html</loc>
+        <loc>https://www.keepsafeagriculture.com/contactanos/</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

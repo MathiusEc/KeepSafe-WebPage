@@ -4,4 +4,4 @@ Allow: /
 # Bloquear páginas de error
 Disallow: /404.html
 
-Sitemap: https://mathiusec.github.io/KeepSafe-WebPage/sitemap.xml
+Sitemap: https://www.keepsafeagriculture.com/sitemap.xml
