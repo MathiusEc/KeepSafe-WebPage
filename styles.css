@@ -2117,7 +2117,7 @@ footer::before {
 }
 
 .servicio-precio {
-    background: var(--color-fondo);
+    background: transparent;
     padding: 1rem 1.5rem;
     border-radius: 10px;
     margin-bottom: 1.5rem;
