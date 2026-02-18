@@ -2083,7 +2083,7 @@ footer::before {
 
 .servicio-icon-large {
     font-size: 2.5rem;
-    background: var(--color-fondo);
+    background: transparent;
     padding: 15px;
     border-radius: 15px;
 }
