@@ -75,33 +75,6 @@ class HeroCarousel {
                 }, this.visibleTime + this.transitionTime);
             }, 1000); // Primer cambio tras 1 segundo
         } else {
-        // FAQ toggle animation: alterna aria-expanded, clase .open y símbolo +/×
-        document.addEventListener('DOMContentLoaded', function () {
-            var faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(function (btn) {
-                btn.addEventListener('click', function () {
-                    var faqItem = btn.closest('.faq-item');
-                    var isOpen = faqItem.classList.contains('open');
-                    // Cierra todos los demás si quieres solo uno abierto a la vez
-                    // document.querySelectorAll('.faq-item.open').forEach(function(item){
-                    //   if(item!==faqItem){
-                    //     item.classList.remove('open');
-                    //     item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-                    //     var icon = item.querySelector('.faq-icon');
-                    //     if(icon) icon.textContent = '+';
-                    //   }
-                    // });
-                    faqItem.classList.toggle('open');
-                    btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-                    var icon = btn.querySelector('.faq-icon');
-                    if (icon) {
-                        icon.textContent = !isOpen ? '×' : '+';
-                    }
-                });
-                // Inicializa aria-expanded
-                btn.setAttribute('aria-expanded', 'false');
-            });
-        });
             this.autoplayInterval = setInterval(() => {
                 this.nextSlide();
             }, this.visibleTime + this.transitionTime);
@@ -637,22 +610,31 @@ function initFAQAccordion() {
         
         if (!question || !answer) return;
         
+        // Inicializar aria-expanded
+        question.setAttribute('aria-expanded', 'false');
+        
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
+            // Cerrar todos los demás
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
+                    const otherQuestion = otherItem.querySelector('.faq-question');
+                    const otherIcon = otherItem.querySelector('.faq-icon');
+                    if (otherQuestion) otherQuestion.setAttribute('aria-expanded', 'false');
+                    if (otherIcon) otherIcon.textContent = '+';
                 }
             });
             
+            // Toggle el actual
             if (isActive) {
                 item.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
             } else {
                 item.classList.add('active');
-            }
-            
-            if (!isActive) {
+                question.setAttribute('aria-expanded', 'true');
+                
                 item.style.animation = 'none';
                 setTimeout(() => {
                     item.style.animation = 'faqExpand 0.4s ease';
