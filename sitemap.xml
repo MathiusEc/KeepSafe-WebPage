@@ -4,7 +4,7 @@
     <!-- Página Principal -->
     <url>
         <loc>https://www.keepsafeagriculture.com/</loc>
-        <lastmod>2026-02-12</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,7 +12,7 @@
     <!-- Servicios -->
     <url>
         <loc>https://www.keepsafeagriculture.com/servicios/</loc>
-        <lastmod>2026-02-12</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -20,7 +20,7 @@
     <!-- Nosotros -->
     <url>
         <loc>https://www.keepsafeagriculture.com/nosotros/</loc>
-        <lastmod>2026-02-12</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -28,7 +28,7 @@
     <!-- Contacto -->
     <url>
         <loc>https://www.keepsafeagriculture.com/contactanos/</loc>
-        <lastmod>2026-02-12</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
